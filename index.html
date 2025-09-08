@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Realiser（レアリゼ）</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url('image/back.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+    }
+
+    header {
+      background-image: url('image/ヘッダー (2).jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 100px 20px 40px;
+      position: relative;
+    }
+
+    header h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 64px;
+      margin: 0;
+      text-shadow: 1px 1px 5px #000;
+    }
+
+    header p {
+      font-size: 20px;
+      margin: 10px 0;
+      text-shadow: 1px 1px 3px #000;
+    }
+
+    .contact-info {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-size: 14px;
+      text-align: right;
+    }
+
+    .contact-info a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    nav {
+      background: #444;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      display: inline-block;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background: #666;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 10px;
+      margin-bottom: 30px;
+    }
+
+    .menu-item {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: space-between;
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .menu-text {
+      flex: 1 1 60%;
+    }
+
+    .menu-text h3 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 28px;
+      margin: 0;
+    }
+
+    .menu-text .jp {
+      font-size: 18px;
+      color: #555;
+    }
+
+    .menu-text .price {
+      font-size: 16px;
+      color: #777;
+      margin-bottom: 10px;
+    }
+
+    .menu-text p {
+      font-size: 14px;
+      color: #666;
+    }
+
+    .menu-img {
+      flex: 1 1 35%;
+      max-width: 300px;
+      margin-left: 20px;
+    }
+
+    .menu-img img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .menu-item {
+        flex-direction: column;
+      }
+      .menu-img {
+        margin-left: 0;
+        margin-top: 15px;
+        max-width: 100%;
+      }
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="contact-info">
+    <a href="mailto:realiser0622@gmail.com">✉✦ realiser0622@gmail.com ✦</a>
+    <a href="https://www.instagram.com/realiser0622?igsh=MWgwMGZvb3FrMWF6Yg%3D%3D&utm_source=qr" target="_blank">📷✧ Instagram ✧</a>
+  </div>
+  <h1>Realiser</h1>
+  <p>— 「実現する」— 心を満たす、特別な一皿を。</p>
+</header>
+
+<style>
+.contact-info {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: right;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  z-index: 10;
+}
+
+.contact-info a {
+  color: #ffefc2;
+  display: block;
+  margin-bottom: 5px;
+  text-decoration: none;
+  transition: transform 0.2s, color 0.2s;
+  letter-spacing: 1px;
+}
+
+.contact-info a:hover {
+  color: #ffd166;
+  transform: scale(1.1);
+}
+
+/* スマホ対応 */
+@media screen and (max-width: 768px) {
+  .contact-info {
+    position: static;
+    text-align: center;
+    margin-bottom: 15px;
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+  .contact-info a {
+    display: inline-block;
+    margin: 0 10px;
+  }
+}
+</style>
+
+
+
+<nav>
+  <a href="#about">お店の紹介</a>
+  <a href="#menu">メニュー</a>
+  <a href="#drinks">ドリンク</a>
+  <a href="#access">アクセス</a>
+  <a href="#reservation">予約</a>
+</nav>
+
+<section id="about">
+  <h2>お店の紹介</h2>
+  <p>所沢にひっそりと週1回だけオープンする、ジビエ料理のランチ店「Realiser」。</p>
+  <p>ここでは、鹿や鴨をはじめとした野生の恵みを丁寧に仕込み、素材の個性を引き出したジビエの世界をご体験いただけます。</p>
+  <p>ひと皿ごとに感じる野生の旨味は、ここでしか味わえない特別な時間。</p>
+  <p>「また来たくなる」そんな温かいひとときを、鹿や鴨の美味しさとともに、仲間と一緒にお楽しみください。</p>
+</section>
+
+<section id="menu">
+  <h2>✦✦✦鴨ランチメニュー✦✦✦《ALL2500円》</h2>
+
+  <div class="menu-item">
+    <div class="menu-text">
+      <h3>・Magret de canard à l’orange</h3>
+      <div class="jp">❖鴨ロース オレンジソース❖</div>
+      <p class="small-letter">ライスorバケットをお選びいただけます。</p>
+      <p class="small-letter">サラダ付き(自家製ヨーグルトドレッシング)</p>
+      <p>✧✧════════════════════════════════════✧✧</p>
+      <p>低温でじっくり調理しこんがりと皮に焼き目をつけた鴨胸肉</p>
+      <p>鴨の濃厚な風味と柔らかい触感をお楽しみいただけます。</p>
+      <p>爽やかな柑橘の香りと優しい酸味が広がるオレンジソースでお召し上がりください</p>
+      <p>✧✧════════════════════════════════════✧✧</p>
+    </div>
+    <div class="menu-img">
+      <img src="image/鴨ロース.png" alt="鴨ロース">
+    </div>
+  </div>
+
+
+  <div class="menu-item">
+    <div class="menu-text">
+      <h3>・Cuisse de canard à la crème</h3>
+      <div class="jp">❖鴨もも クリームソース❖</div>
+      <p class="small-letter">ライスorバケットをお選びいただけます。</p>
+      <p class="small-letter">サラダ付き(自家製ヨーグルトドレッシング)</p>
+      <p>✧✧════════════════════════════════════✧✧</p>
+      <p>低温でじっくり調理し皮に香ばしい焼き目をつけた鴨もも肉</p>
+      <p>噛み応えがあり、ロースとはまた違う濃厚な風味をお楽しみください。</p>
+      <p>クリームソースと爽やかなレモンが肉を包み込む、贅沢な味わいをお楽しみいただけます。</p>
+      <p>✧✧════════════════════════════════════✧✧</p>
+    </div>
+    <div class="menu-img">
+      <img src="image/鴨もも.jpg" alt="鴨もも">
+    </div>
+  </div>
+
+<section id="menu">
+  <h2 class="deer-title">✦✦✦鹿ランチメニュー✦✦✦《ALL2500円》</h2>
+  <p class="deer-note">※ご注文から焼くため20分ほどお時間をいただきます。</p>
+</section>
+
+<style>
+  .deer-title {
+    margin: 0;
+    padding: 0;
+  }
+  .deer-note {
+    margin: 2px 0 0; /* 上だけ2px余白 */
+    padding: 0;
+    color: red; /* 赤文字に変更 */
+  }
+</style>
+
+
+
+  <div class="menu-item">
+    <div class="menu-text">
+      <h3>Filet de chevreuil au vin rouge</h3>
+      <div class="jp">❖鹿ロース 赤ワインソース❖</div>
+      <p class="small-letter">ライスorバケットをお選びいただけます。</p>
+      <p class="small-letter">サラダ付き(自家製ヨーグルトドレッシング)</p>
+      <p>✧✧════════════════════════════════════✧✧</p>
+      <p>絶妙な火加減で火入れした鹿ロース</p>
+      <p>濃厚で深みのある赤ワインソースが、肉の旨味を引き立てます。</p>
+      <p>臭みのない鹿肉の風味と上品な味わいを楽しみながらお召し上がりください</p>
+      <p>✧✧════════════════════════════════════✧✧</p>
+    </div>
+    <div class="menu-img">
+      <img src="image/鹿ロース.jpg" alt="鹿ロース">
+    </div>
+  </div>
+
+
+  <div class="menu-item">
+    <div class="menu-text">
+      <h3>Cuisse de chevreuil à la sauce mayonnaise</h3>
+      <div class="jp">❖鹿もも マヨネーズソース❖</div>
+      <p class="small-letter">ライスorバケットをお選びいただけます。</p>
+      <p class="small-letter">サラダ付き(自家製ヨーグルトドレッシング)</p>
+      <p>✧✧════════════════════════════════════✧✧</p>
+      <p>絶妙な火加減で火入れした鹿もも肉</p>
+      <p>コクのあるマヨネーズソースが鹿肉の旨味と絶妙に絡みます</p>
+      <p>もも肉の柔らかくジューシーな食感をお楽しみいただけます。</p>
+      <p>✧✧════════════════════════════════════✧✧</p>
+    </div>
+    <div class="menu-img">
+      <img src="image/鹿もも.jpg" alt="鹿もも">
+    </div>
+  </div>
+
+   <div class="menu-item">
+    <div class="menu-text">
+      <h3>Steak haché de chevreuil à la sauce demi-glace</h3>
+      <div class="jp">❖鹿バーグ デミグラスソース❖</div>
+      <p class="small-letter">ライスorバケットをお選びいただけます。</p>
+      <p class="small-letter">サラダ付き(自家製ヨーグルトドレッシング)</p>
+      <p>✧✧════════════════════════════════════✧✧</p>
+      <p>鹿ひき肉を丁寧に練り上げ、ふんわりジューシーなハンバーグに仕上げました。</p>
+      <p>濃厚でコクのあるデミグラスソースが、鹿肉の旨味を引き立てております</p>
+      <p>臭みのない鹿肉の旨味が噛むたびに口いっぱいに広がります。</p>
+      <p>✧✧════════════════════════════════════✧✧</p>
+    </div>
+    <div class="menu-img">
+      <img src="image/鹿バーグ.jpg" alt="鹿バーグ">
+    </div>
+  </div>
+
+
+   <div class="menu-item">
+    <div class="menu-text">
+      <h3>Jarret de chevreuil braisé au vin rouge</h3>
+      <div class="jp">❖鹿すね赤ワイン煮込み❖</div>
+      <p class="small-letter">ライスorバケットをお選びいただけます。</p>
+      <p class="small-letter">サラダ付き(自家製ヨーグルトドレッシング)</p>
+      <p>✧✧════════════════════════════════════✧✧</p>
+      <p>赤ワインでじっくりマリネした鹿すね肉を、低温で長時間煮込みました。</p>
+      <p>柔らかくほろほろと崩れる食感と、濃厚で深い赤ワインソースの旨味が絶妙に絡み合います。</p>
+      <p>鹿肉特有の上品な風味を活かしつつ、ワインの香りとコクが引き立てる贅沢な一皿です。</p>
+      <p>✧✧════════════════════════════════════✧✧</p>
+    </div>
+    <div class="menu-img">
+      <img src="image/鹿すね.jpg" alt="鹿すね">
+    </div>
+  </div>
+
+<section id="desert">
+  <h2>✦✦✦デザート✦✦✦《ALL600円》</h2>
+
+  <div class="menu-item">
+    <div class="menu-text">
+      <h3>gâteau aux fraises</h3>
+      <div class="jp">✤苺のショートケーキ✤</div>
+      <p>✧✧════════════════════════════════════✧✧</p>
+      <p>しっとりふわふわのスポンジに苺の甘酸っぱさ</p>
+      <p>たっぷりの生クリームの優しい甘さが広がる定番の逸品</p>
+      <p>✧✧════════════════════════════════════✧✧</p>
+    </div>
+    <div class="menu-img">
+      <img src="image/苺のショートケーキ.jpg" alt="苺のショートケーキ">
+    </div>
+  </div>
+
+  <div class="menu-item">
+    <div class="menu-text">
+      <h3>Gâteau au chocolat</h3>
+      <div class="jp">✤ガトーショコラ✤</div>
+      <p>✧✧════════════════════════════════════✧✧</p>
+      <p>ココアたっぷりのスポンジに丸ごとダークチェリーの酸味</p>
+      <p>口溶け抜群な逸品で大人のチョコレートケーキ</p>
+      <p>食後のコーヒーと相性抜群な逸品</p>
+      <p>✧✧════════════════════════════════════✧✧</p>
+    </div>
+    <div class="menu-img">
+      <img src="image/ガトーショコラ.jpg" alt="ガトーショコラ">
+    </div>
+  </div>
+
+  <div class="menu-item">
+    <div class="menu-text">
+      <h3>Gâteau au chocolat au matcha</h3>
+      <div class="jp">✤濃厚抹茶のガトーショコラ✤</div>
+      <p>✧✧════════════════════════════════════✧✧</p>
+      <p>深みのあるある抹茶をたっぷりと使用したガトーショコラ</p>
+      <p>ミルク餡を練りこんだ生クリームとの相性が最高の逸品</p>
+      <p>✧✧════════════════════════════════════✧✧</p>
+    </div>
+    <div class="menu-img">
+      <img src="image/抹茶ガトーショコラ.jpg" alt="抹茶ガトーショコラ">
+    </div>
+  </div>
+
+  <div class="menu-item">
+    <div class="menu-text">
+      <h3>Cheesecake new-yorkais</h3>
+      <div class="jp">✤ニューヨークチーズケーキ✤</div>
+      <p>✧✧════════════════════════════════════✧✧</p>
+      <p>2種類のチーズを使用したレモンが香るチーズケーキ</p>
+      <p>甘い物が食べたいけどさっぱりした甘さが良いという方にお勧め</p>
+      <p>ボリュームたっぷりだけど食べやすい逸品</p>
+      <p>✧✧════════════════════════════════════✧✧</p>
+    </div>
+    <div class="menu-img">
+      <img src="image/チーズケーキ.jpg" alt="チーズケーキ.jpg">
+    </div>
+  </div>
+
+  <div class="menu-item">
+    <div class="menu-text">
+      <h3>Mont-Blanc classique</h3>
+      <div class="jp">✤クラシックモンブラン✤</div>
+      <p>✧✧════════════════════════════════════✧✧</p>
+      <p>香ばしいアーモンドクリームにフランス産のマロンクリームをふんだんに使用</p>
+      <p>甘すぎないクリームの味わいと栗の香りが上品に溶け合います</p>
+      <p>食後の紅茶との相性がピッタリの逸品</p>
+      <p>✧✧════════════════════════════════════✧✧</p>
+    </div>
+    <div class="menu-img">
+      <img src="image/クラシックモンブラン.jpg" alt="クラシックモンブラン">
+    </div>
+  </div>
+
+
+</section>
+
+<section id="drinks">
+<section id="drinks">
+  <h2>✦✦✦ドリンク✦✦✦</h2>
+
+  <!-- ソフトドリンク枠 -->
+  <div class="menu-box">
+    <p>《✽ソフトドリンク　　300円》</p>
+    <p>・コーヒー(ホット/アイス)　　・カフェオレ(ホット/アイス)　　・紅茶(ホット/アイス)</p>
+    <p>・烏龍茶　　　　　　　　　 　・コーラ</p>
+  </div>
+
+  <!-- アルコール枠 -->
+  <div class="menu-box">
+    <p>《✽アルコール　　600円》</p>
+    <p>・ウイスキー(ストレート/ロック/ソーダ)　　・芋焼酎(ストレート/ロック/ソーダ)　　・グラスワイン（赤/白）</p>
+    <p>・レモンサワー</p>
+  </div>
+</section>
+
+<style>
+.menu-box {
+  background-color: white;      /* 白枠 */
+  border: 1px solid #ccc;       /* 枠線 */
+  border-radius: 8px;           /* 角丸 */
+  padding: 15px;
+  margin-bottom: 20px;          /* 下に余白 */
+  box-sizing: border-box;
+}
+</style>
+
+<section id="access">
+  <h2>アクセス</h2>
+  <div class="access-container">
+    <div class="access-text">
+      <p>
+        〒359-0037 埼玉県所沢市くすのき台1-5-23 シェアキッチンくすのきっちん レンタルスペース プラム <br>
+        所沢駅東口より徒歩5分<br>
+　　　  <a href="https://l.instagram.com/?u=https%3A%2F%2Fmaps.app.goo.gl%2Fgy9hf3zPuZ4gi4MfA%3Fg_st%3Dipc%26fbclid%3DPAZXh0bgNhZW0CMTEAAacQcOosNY-9EtWh9jIKe8974sbyT29gh_NSNZxaPN0HC1YSLXHJbsJgLcZzjw_aem_oyjvGSjaNE4aRgbbnIPNFw&e=AT2jNJTT_sjlkcSsGK0HPADCmpBwP9zNYQ0eVs84n3w0b_oOeoDvRGs_8gjpZsJ3JSI4GsWJqAHnwCoFtgSxrnOIxO5M7OZg-w4MNfHc91WFIlXA4GWuQIvYXg">Googleマップ</a><br>
+        営業時間：12:00～15:30（L.O. 14:30）<br>
+        営業日：不定期となっております。詳細はInstagramでご確認お願い致します。
+
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<section id="reservation" class="reservation">
+  <h2>ご予約</h2>
+  <p>メールまたはInstagramダイレクトメッセージ、下記フォームのいずれかでご予約いただけます。</p>
+  <a href="https://coubic.com/realiser0622">予約フォーム</a>
+  <p><a href="https://www.instagram.com/realiser0622?igsh=MWgwMGZvb3FrMWF6Yg%3D%3D&utm_source=qr">Instagram DM</a></p>
+  <p><a href="mailto:realiser0622@gmail.com">Gメール</a></p>
+</section>
+
+<footer>
+  <p>&copy; 2025 Realiser. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
